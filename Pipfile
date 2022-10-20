@@ -19,6 +19,9 @@ scikit-image = "*"
 torch = "*"
 torchaudio = "*"
 torchvision = "*"
+skorch = "*"
+ray = "*"
+tensorboardx = "*"
 
 [dev-packages]
 

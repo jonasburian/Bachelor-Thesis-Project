@@ -22,6 +22,7 @@ torchvision = "*"
 skorch = "*"
 ray = "*"
 tensorboardx = "*"
+torchinfo = "*"
 
 [dev-packages]
 

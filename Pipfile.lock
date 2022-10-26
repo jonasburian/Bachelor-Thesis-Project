@@ -1714,6 +1714,14 @@
             "index": "pypi",
             "version": "==0.12.1"
         },
+        "torchinfo": {
+            "hashes": [
+                "sha256:792d429d87814aa9ddfb0f1b9d8c75861edc6099c5d753148064d3217128ff42",
+                "sha256:7eb76ef0ca2d75aa7bf973451ba3693333ba97e197f8fa69d671b7f636384db4"
+            ],
+            "index": "pypi",
+            "version": "==1.7.1"
+        },
         "torchvision": {
             "hashes": [
                 "sha256:0298bae3b09ac361866088434008d82b99d6458fe8888c8df90720ef4b347d44",

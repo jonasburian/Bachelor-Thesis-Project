@@ -23,6 +23,7 @@ skorch = "*"
 ray = "*"
 tensorboardx = "*"
 torchinfo = "*"
+scipy = "*"
 
 [dev-packages]
 

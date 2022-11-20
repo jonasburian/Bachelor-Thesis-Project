@@ -24,6 +24,7 @@ ray = "*"
 tensorboardx = "*"
 torchinfo = "*"
 scipy = "*"
+statsmodels = "*"
 
 [dev-packages]
 

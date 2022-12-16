@@ -1,0 +1,1 @@
+# Project for the Bachelor Thesis on Modelling of Pertubations on Seismocardiography Signals

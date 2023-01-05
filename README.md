@@ -1,6 +1,6 @@
 # Project for the Bachelor Thesis on Modelling of Pertubations on Seismocardiography Signals
 
-This repository contains the source code for the experiments in the bachelor's thesis on the subject of 'Modelling of pertubations in seismocardiography signals'. eventually more prosa/introduction for the project
+This repository contains the source code for the experiments in the bachelor's thesis on the subject of 'Modelling of pertubations in seismocardiography signals'. TODO: eventually some introduction to the project
 
 
 ## Structure

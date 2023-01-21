@@ -10,13 +10,13 @@ wget -cNP $CEBS https://physionet.org/static/published-projects/cebsdb/combined-
 unzip -jn $CEBS'data.zip' 'files/*' -d $CEBS
 rm $CEBS'data.zip'
 
-# D2 dataset
-D2=$DATA'D2/'
-mkdir -p $D2
+# ECMS dataset
+ECMS=$DATA'ECMS/'
+mkdir -p $ECMS
 
-wget -cNP $D2 https://zenodo.org/record/5279448/files/Raw_Recordings.zip?download=1 -O $D2'data.zip'
-unzip -jn $D2'data.zip' 'Raw_Recordings/*' -d $D2
-rm $D2'data.zip'
+wget -cNP $ECMS https://zenodo.org/record/5279448/files/Raw_Recordings.zip?download=1 -O $ECMS'data.zip'
+unzip -jn $ECMS'data.zip' 'Raw_Recordings/*' -d $ECMS
+rm $ECMS'data.zip'
 
 # IEEE dataset
 IEEE=$DATA'IEEE/'

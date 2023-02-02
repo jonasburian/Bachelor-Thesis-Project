@@ -35,4 +35,4 @@ unzip -jn $ACC'data.zip' 'Activity Recognition from Single Chest-Mounted Acceler
 rm $ACC'data.zip'
 
 # Configure virtual env
-# pipenv install --python 3.10
+pipenv install --python 3.10

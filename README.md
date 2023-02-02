@@ -1,11 +1,15 @@
 # Project for the Bachelor Thesis on Modelling of Pertubations on Seismocardiography Signals
 
-This repository contains the source code for the experiments in the bachelor's thesis on the subject of 'Modelling of pertubations in seismocardiography signals'. TODO: eventually some introduction to the project
+This is the software project for the bachelor thesis on "Modelling of Perturbations in Seismocardiography Signals".
+
+## Abstract
+
+Seismocardiography is a common method for monitoring and preventing cardiovascular diseases, the leading cause of mortality worldwide. At the same time, seismocardiography signals are often contaminated by noise and artefacts, making it difficult to accurately extract the signal morphology and reliably assess the cardiac health. For this reason, this thesis introduces a new approach for denoising seismocardiography signals using fully convolutional autoencoders and proposes a method for modelling motion noise on the signals. In order to investigate not only the capability and suitability of the approach, but also its impact on the use case of extracting an electrocardiogram from seismocardiography signals, several experiments were conducted in the process. Overall, the results favour the use of autoencoders over the traditional wavelet denoising method. Moreover, for noisy signals, the proposed approach allows a significant improvement in the transformability of seismocardiography signals into electrocardiography signals. With such improvements in noise reduction, the method will in the future enable the assessment of cardiac health in a wide range of noisy environments, such as during physical activities, which in turn implies a better applicability of seismocardiography signals.
 
 
 ## Structure
 
-Most of the code and documentation resides in the `project.ipynb` jupyter notebook. This project uses pipenv to manage package dependencies and virtual environments. This can be configured within the provided `Pipfile`. What is more, a `data/` directory will be created during the initialization process containing all the used datasets. The trained models are saved within the `models/` directory and results from testing in the `results` directory.
+Most of the code and documentation resides in the  `project.ipynb`, which contains the full processing pipeline, including the loading and pre-processing of the datasets, the training of the autoencoders, the evaluation for the four experiments and further utility functions to create visualisations of the results. This project uses pipenv to manage package dependencies and virtual environments. This can be configured within the provided `Pipfile`. What is more, a `data` directory will be created during the initialization process containing all the used datasets. The trained models are saved within the `models` directory and results from testing in the `results` directory.
 
 ## Configuration
 

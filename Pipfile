@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [[source]]
-url = "https://download.pytorch.org/whl/cu111"
+url = "https://download.pytorch.org/whl/cu117"
 verify_ssl = true
 name = "pytorch"
 
@@ -16,7 +16,7 @@ pandas = "*"
 matplotlib = "*"
 scikit-learn = "*"
 scikit-image = "*"
-torch = "*"
+torch = {version = "==1.13.1+cu117", index = "pytorch"}
 ray = "*"
 torchinfo = "*"
 scipy = "*"

@@ -1,4 +1,4 @@
-# Project for the Bachelor Thesis on Modelling of Pertubations on Seismocardiography Signals
+# Project for the Bachelor Thesis on  the subject of "Modelling of Pertubations on Seismocardiography Signals"
 
 This is the software project for the bachelor thesis on "Modelling of Perturbations in Seismocardiography Signals". The aim of this project is to provide the means to carry out the four different experiments of the thesis and to enable the evaluation.
 
@@ -9,6 +9,8 @@ Seismocardiography is a common method for monitoring and preventing cardiovascul
 ## Structure
 
 Most of the code and documentation resides in `project.ipynb`, which contains the complete processing pipeline, including the loading and pre-processing of the datasets, the training of the autoencoders, the evaluation for the four experiments, and other utilities for creating visualisations and plots of the results. This project uses `pipenv` to manage package dependencies and virtual environments. This can be configured within the provided `Pipfile`. In addition, a `data` directory is created during the initialisation process, containing all the datasets used. The trained models are stored in the `models` directory and the test results in the `results` directory.
+
+Specifically, the trained autoencoder models are stored in three subfolders of the `models` directory, namely `motion`, `wgn` and `ecg`, where the autoencoders were trained on the motion-based noise model, the WGN model and for the SCG/ECG transformation task, respectively. The model files are always named in the same way: The name starts with the model name (`model_1`, `model_2` or `model_ecg`), then continues with the noise model used, i.e. `wgn1` to `wgn4`, which also applies to the WGN part of the motion noise model, and ends with some optional information for more specific models. For example, the ending `bandpass` indicates that the model was trained on the bandpass filtered training data, while `cebs_full` and `cebs_omitted` stand for training on the full CEBS dataset with no training set and training on the same dataset but without subjects one and two. For AE2 trained for the SCG/ECG transformation (here `model_ecg`), no noise model is specified. Instead, the name includes the normalisation applied to the ECG and SCG data. Specifically, `both_norm` indicates that both ECG and SCG samples were normalised, `ecg_norm` and `scg_norm` that only ECG or SCG samples were normalised, and `wo_norm` that no normalisation was applied. In addition to the trained models, the training and validation losses for each trained model are included as .csv files with the same filename but with `loss` at the beginning instead of `model`.
 
 ## Requirements
 
